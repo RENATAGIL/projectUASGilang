@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <title>DUNIA SOTO</title>
+</head>
+<body>
+    <header>
+        <img id="banner" src="{% static banner1 %}" alt="logo">
+        <h1>DUNIA SOTO</h1>
+        <nav>
+            <ul> 
+                {% for link,name in nav1 %}
+                <li>
+                    <a href="{{ link }}">{{ name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    <p>Soto, sroto, sauto, tauto, atau coto adalah makanan khas Indonesia seperti sop yang terbuat dari 
+        kaldu daging dan sayuran. Daging yang paling sering digunakan adalah daging sapi dan daging ayam, tetapi ada pula yang menggunakan daging kambing.</p>
+        <div class="content">
+            <ul>
+                <li>
+                    <div class="card">
+                        <img src="{% static soto1 %}" alt="">
+                        <h3>SOTO LAMONGAN</h3>
+                        <p>Ciri khas dari Soto Lamongan ini adalah kuahnya yang berwarna kuning. Rasanya semakin lezat karena adanya berbagai rempah di dalamnya. Kuah soto yang berwarna kuning bening dengan rasa gurih dan khas terbuat dari bumbu halus, seperti bawang putih, ketumbar sangria, merica, kemiri sangrai dan kunyit.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="{% static soto2 %}" alt="">
+                        <h3>SOTO KUDUS</h3>
+                        <p> soto yang berasal dari Kudus, Jawa Tengah. Soto kudus, hampir mirip dengan soto Lamongan, soto kudus berisi suwiran ayam dan taoge. Terkadang soto kudus juga menggunakan daging kerbau. Kuahnya lebih bening</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="{% static soto3 %}" alt="">
+                        <h3>SOTO AYAM</h3>
+                        <p>makanan khas Indonesia yang berupa sejenis sup ayam dengan kuah yang berwarna kekuningan. Warna kuning ini dikarenakan oleh kunyit yang digunakan sebagai bumbu. Soto ayam banyak ditemukan di daerah-daerah di Indonesia dan Singapura.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="{% static soto4 %}" alt="">
+                        <h3>SOTO SAPI</h3>
+                        <p>makanan khas Indonesia yang berupa sejenis sup sapi dengan kuah yang berwarna kekuningan. Warna kuning ini dikarenakan oleh kunyit yang digunakan sebagai bumbu. Soto sapi banyak ditemukan di daerah-daerah di Indonesia dan Singapura.</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    <footer>
+        <p>PROJEK UAS DARI KELOMPOK 6</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <title>DUNIA SOTO</title>
+</head>
+<body>
+    <header>
+        <img id="banner" src="{%static banner%}" alt="">
+        <h1>DUNIA SOTO</h1>
+        <nav>
+            <ul> 
+                {% for link,name in nav %}
+                <li>
+                    <a href="{{ link }}">{{ name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    <p>Soto, sroto, sauto, tauto, atau coto adalah makanan khas Indonesia seperti sop yang terbuat dari 
+        kaldu daging dan sayuran. Daging yang paling sering digunakan adalah daging sapi dan daging ayam, tetapi ada pula yang menggunakan daging kambing.</p>
+        <p>KELOMPOK 6 ANGGOTA : </p>
+        <p>ALISYA UMMI FAWZIA (210101048)</p>
+        <P>RENATA GILANG SAPUTRA (210101079)</P>
+        <P>WULAN NUR LAYLI (210101085)</P>
+    <footer>
+        <p>PROJEK UAS DARI KELOMPOK 6</p>
+    </footer>
+</body>
+</html>
